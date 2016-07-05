@@ -211,21 +211,20 @@ Log
   arquitetura e linguagem utilizadas, regras do jogo, RFs e RNFs.
 
 As classes foram organizadas da seguinte forma:
-
-    - As cores possíveis para preencher os palpites é definida em um enumerador
-      `Cor`;
-    - Cada palpite é chamado de `Chave` e consiste em um conjunto de `Cor` de
-      tamanho 4;
-    - As dicas possíveis são definidas em um enumerador `Dica`;
-    - Cada slot do tabuleiro consiste em uma `Chave` e um conjunto de 0 a 4
-      `Dica`s, o que é definido na classe `SlotTabuleiro`;
-    - O `Tabuleiro` consiste em um conjunto de 12 elementos do tipo
-      `SlotTabuleiro`;
-    - Cada jogador é representado pela classe `Jogador`, que possui seu
-      respectivo apelido e um indicador de turno;
-    - Cada jogada enviada/recebida por um jogador é tratada como sendo da
-      classe `Jogada`, que possui o jogador que a efetuou e qual o palpite
-      (`Chave`) feito;
-    - Tudo é englobado em uma classe `Jogo`, que guarda consigo o `Tabuleiro`,
-      os dois `Jogador`, uma `Chave` e um enumerador com os possíveis estados
-      do jogo (conectando, desconectado, em andamento e finalizado).
+- As cores possíveis para preencher os palpites é definida em um enumerador
+  `Cor`;
+- Cada palpite é chamado de `Chave` e consiste em um conjunto de `Cor` de
+  tamanho 4;
+- As dicas possíveis são definidas em um enumerador `Dica`;
+- Cada slot do tabuleiro consiste em uma `Chave` e um conjunto de 0 a 4
+  `Dica`s, o que é definido na classe `SlotTabuleiro`;
+- O `Tabuleiro` consiste em um conjunto de 12 elementos do tipo
+  `SlotTabuleiro`;
+- Cada jogador é representado pela classe `Jogador`, que possui seu respectivo
+  apelido e um indicador de turno;
+- Cada jogada enviada/recebida por um jogador é tratada como sendo da classe
+  `Jogada`, que possui o jogador que a efetuou e qual o palpite (`Chave`)
+  feito;
+- Tudo é englobado em uma classe `Jogo`, que guarda consigo o `Tabuleiro`, os
+  dois `Jogador`, uma `Chave` e um enumerador com os possíveis estados do jogo
+  (conectando, desconectado, em andamento e finalizado).
